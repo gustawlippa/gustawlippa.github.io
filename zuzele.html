@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ZUZELE</title>
-
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,12 +12,14 @@
 	<div id="main">
 		<p>This is a game simulating a speedway race inspired by the "ZUZEL.EXE" program, created by Piotr Kamiński. This implementation was written by me, using the <a href="https://love2d.org/" target="_blank">LÖVE Framework</a> and packaged using <a href="https://github.com/Davidobot/love.js" target="_blank">love.js</a>.</p>
 		<p>Try not to crash using only one button to steer left!</p>
-		<div id="game">
-        <canvas id="loadingCanvas" class="game" oncontextmenu="event.preventDefault()" width="800" height="600"></canvas>
-        <canvas id="canvas" class="game" width="800" height="600"></canvas>
+		<div class="wrapper">
+			<div class="game">
+				<canvas id="loadingCanvas" oncontextmenu="event.preventDefault()" width="800" height="600"></canvas>
+				<canvas id="canvas" width="800" height="600"></canvas>
 			</div>
-<br>
-		<button onclick="goFullScreen();">Go Fullscreen</button>
+		</div>
+	<br>
+	<button onclick="goFullScreen();">Go Fullscreen</button>
 	</div>
 </div>
 <script type="text/javascript">
